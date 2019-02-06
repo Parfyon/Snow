@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.btn-lg {
+  font-size: 13px;
+  line-height: 1.33;
+  padding: 22px 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+h1 {
+  font-size: 40px;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.42857143;
+  color: #fff;
+}
+button,
+#submit {
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+header {
+  background-image: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+header #fixedNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .fig {
+  background-color: #4ec3cd;
+  position: fixed;
+  top: 0;
+  padding: 10px 0;
+  width: 100vw;
+  z-index: 999;
+  display: none;
+  animation: open 1s;
+}
+header .fig .container {
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+@keyframes open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header .container #enter {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  align-items: center;
+}
+header .container #allignHeader {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+header .container #allignHeader h1 {
+  font-size: 50px;
+}
+header .container #allignHeader p {
+  text-align: center;
+}
+header .container #allignHeader #allignButtons button {
+  margin-top: 20px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 5px;
+  transition: 1s background-color;
+  animation: headerButtons linear 1s;
+}
+header .container #allignHeader #learn:hover {
+  background-color: #fcfcfc;
+}
+header .container #allignHeader #request {
+  background-color: #2bb5bc;
+  color: #fff;
+}
+header .container #allignHeader #request:hover {
+  background-color: #70cbce;
+}
+@keyframes headerButtons {
+  from {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 20px;
+    opacity: 1;
+  }
+}
+/*///////////////////////////////////////header*/
+#be-the-first {
+  background-image: url('../img/balloon.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 20vh 0 15vh 0 ;
+  min-height: 480px;
+}
+#be-the-first .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main-info {
+  background-color: #fff;
+  position: relative;
+}
+#main-info #iphone {
+  max-width: 440px;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -400px;
+}
+#main-info .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+#main-info .container div {
+  width: 28%;
+}
+#main-info .container hr {
+  width: 120%;
+  margin-bottom: 20px;
+}
+#main-info p {
+  color: grey;
+}
+#main-info p:first-line {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/*///////////////////////////////main-content*/
+#pricing {
+  background-color: #4ec3cd;
+  padding: 20vh 0;
+}
+#pricing .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blocks {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.blocks div {
+  width: 33%;
+  animation: linear features 2s;
+}
+.blocks div li {
+  text-align: center;
+}
+@keyframes features {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.head {
+  background-color: #231f20;
+  padding: 10px 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.price {
+  background-color: #231f20;
+  transition: background-color 1s;
+  padding: 15px 0;
+  padding: 25px 0;
+  font-size: 30px;
+}
+.price:hover {
+  background-color: grey;
+}
+.undePrice {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 13px;
+  color: #929496;
+  border-bottom: 1px dashed #d7dbe0;
+}
+.wh-bg {
+  background-color: #fff;
+}
+.features {
+  color: #231f20;
+  font-weight: bold;
+  border-bottom: 1px dashed #d7dbe0;
+  padding: 7px 0;
+}
+#getStarted {
+  color: #4ec3cd;
+  font-size: 29px;
+  transition: background-color 1s;
+}
+#getStarted:hover {
+  background-color: #d7dbe0;
+}
+/*///////////////////////////////pricing*/
+#invite {
+  background: #f2f2f2;
+  padding: 15vh 0;
+  min-height: 250px;
+}
+#invite .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#invite .container i {
+  color: #4ec3cd;
+  font-size: 30px;
+  border: 2px solid #4ec3cd;
+  border-radius: 30px;
+  padding: 10px;
+}
+#invite .container h1 {
+  color: #000;
+}
+#invite .container p {
+  color: #231f20;
+}
+#invite .container #email {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  height: 60px;
+  width: 281px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -10px 11px 20px 0px rgba(0, 0, 0, 0.075);
+  font-size: 24px;
+}
+#invite .container #submit {
+  height: 60px;
+  width: 170px;
+  background-color: #70cbce;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+}
+/*////////////////////////invite*/
+#press {
+  color: #000;
+  min-height: 200px;
+  padding: 10vh;
+}
+#press div {
+  text-align: center;
+}
+#press p {
+  display: inline;
+}
+#press .line {
+  border-bottom: 1px dashed #000;
+}
+/*///////////////////////////press*/
+footer {
+  color: #000;
+  padding: 10vh 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer #copyright {
+  margin-left: 0 auto;
+}
+footer #connection {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+footer li {
+  display: inline;
+}
+footer i {
+  color: #000;
+}
